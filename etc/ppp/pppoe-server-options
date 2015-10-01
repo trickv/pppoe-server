@@ -1,0 +1,25 @@
+ms-dns 114.114.114.114
+asyncmap 0
+noauth
+crtscts
+lock
+hide-password
+modem
+debug
+proxyarp
+lcp-echo-interval 10
+lcp-echo-failure 2
+noipx
+ 
+# plugin /etc/ppp/plugins/rp-pppoe.so
+# only want/need the plugin if rp-pppoe is compiled
+# default package on ubuntu doesn't ship it
+
+require-pap
+ktune
+nobsdcomp
+noccp
+novj
+ipv6 ::1,::2
+# ipv6cp-use-ipaddr
+
